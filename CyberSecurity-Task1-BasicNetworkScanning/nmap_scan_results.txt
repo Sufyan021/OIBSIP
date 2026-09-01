@@ -1,1 +1,39 @@
 
+Target IP: 172.31.238.132
+
+Command 1:
+nmap 172.31.238.132
+
+Result:
+Host is up.
+All 1000 scanned TCP ports were filtered.
+
+--------------------------------------------------
+
+Command 2:
+sudo nmap -sV 172.31.238.132
+
+Result:
+Service version detection was attempted.
+No services could be identified because all scanned ports were filtered.
+
+--------------------------------------------------
+
+Command 3:
+sudo nmap -O 172.31.238.132
+
+Result:
+Host is up (0.0033s latency).
+All 1000 scanned ports were filtered.
+OS detection could not determine the operating system due to insufficient responses.
+Network Distance: 0 hops.
+
+--------------------------------------------------
+
+Security Analysis:
+
+The target host responded to network probes, indicating that it is active on the network.
+
+However, all scanned ports were filtered, suggesting that a firewall or packet filtering mechanism is blocking incoming connection attempts.
+
+This configuration reduces the attack surface by preventing attackers from identifying running services and operating system information.
