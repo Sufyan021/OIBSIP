@@ -9,7 +9,24 @@ The objective of this task is to perform network scanning using Nmap and identif
 
 - Kali Linux Terminal
 - Nmap
+- 
+## Nmap Installation
 
+Nmap was installed on the Kali Linux terminal using the following commands:
+
+```bash
+sudo apt update
+sudo apt install nmap -y
+```
+
+To verify the installation:
+
+```bash
+nmap --version
+```
+
+The command successfully displayed the installed Nmap version, confirming that Nmap was installed correctly.
+```
 ## Commands Executed
 
 ```bash
