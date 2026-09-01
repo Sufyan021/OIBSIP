@@ -26,7 +26,7 @@ nmap --version
 ```
 
 The command successfully displayed the installed Nmap version, confirming that Nmap was installed correctly.
-```
+
 ## Commands Executed
 
 ```bash
