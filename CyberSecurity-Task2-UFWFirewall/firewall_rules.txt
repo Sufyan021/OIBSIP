@@ -1,1 +1,38 @@
 
+UFW Firewall Configuration
+
+Firewall Status: Active
+
+Commands Executed:
+
+sudo ufw enable
+
+sudo ufw allow 22/tcp
+
+sudo ufw allow 80/tcp
+
+sudo ufw deny 21/tcp
+
+sudo ufw status numbered
+
+Configured Rules:
+
+22/tcp    ALLOW IN    Anywhere
+80/tcp    ALLOW IN    Anywhere
+21/tcp    DENY IN     Anywhere
+
+IPv6 Rules:
+
+22/tcp (v6)    ALLOW IN
+80/tcp (v6)    ALLOW IN
+21/tcp (v6)    DENY IN
+
+Security Analysis:
+
+SSH access (Port 22) was allowed to enable remote administration.
+
+HTTP traffic (Port 80) was allowed to support web services.
+
+FTP access (Port 21) was denied because FTP transmits data in plain text and may expose credentials.
+
+Using a firewall helps reduce the attack surface by controlling incoming network traffic.
